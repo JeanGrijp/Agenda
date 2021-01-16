@@ -54,4 +54,7 @@ form.login h1 {
     color: var(--color-text-title);
 }
 
-/* form.login  */
+form.login div.formLogin {
+    position: absolute;
+    top: 15%;
+}

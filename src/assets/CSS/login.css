@@ -90,6 +90,7 @@ div.userLogin img {
     height: 80%;
     position: absolute;
     left: 0%;
+    animation: passwordAni 1s linear;
 }
 
 div.passwordLogin input {
@@ -109,13 +110,42 @@ div.passwordLogin img {
     height: 80%;
     position: absolute;
     left: 0%;
+    animation: passwordAni 1s linear;
+}
 
+@keyframes passwordAni {
+    0%{
+        width: 20%;
+        height: 80%;
+        position: absolute;
+        left: -200%;
+    }
+    100% {
+        width: 20%;
+        height: 80%;
+        position: absolute;
+        left: 0%;
+    }
 }
 
 div.login form h1 {
     text-align: center;
     position: absolute;
     top: 25%;
+    animation: loginFormH1 1.5s linear;
+}
+
+@keyframes loginFormH1 {
+    0% {
+        text-align: center;
+        position: absolute;
+        top: 150%;
+    }
+    100% {
+        text-align: center;
+        position: absolute;
+        top: 25%;
+    }
 }
 
 div.login form input[type=button] {
@@ -128,6 +158,7 @@ div.login form input[type=button] {
     border-radius: 10px;
     color: white;
     transition: 0.3s;
+    animation: loginDur 1s linear;
 }
 
 div.login form input[type=button]:hover {
@@ -193,4 +224,29 @@ div.login a.cadastrar {
     background: none;
     color: white;
     border: none;
+}
+
+@keyframes loginDur {
+    0% {
+        position: absolute;
+        top: 150%;
+        background:  rgb(5, 41, 87);
+        width: 20%;
+        height: 5%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        /* transition: 1s; */
+    }
+    100% {
+        position: absolute;
+        top: 70%;
+        background:  rgb(5, 41, 87);
+        width: 20%;
+        height: 5%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        /* transition: 1s; */
+    }
 }

@@ -214,6 +214,8 @@ div.login form h1 {
 }
 
 div.login form input[type=button] {
+    transition-delay: 1s;
+    animation-delay: 1s;
     position: absolute;
     top: 80%;
     background:  rgb(5, 41, 87);

@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
-    <div class="logo"><h1 class="logo-h1">TEK<span>O</span> </h1></div>
-    <form class="login" method="GET">
-
-        <h1>Login</h1>
-        <div class="formLogin">
-            <img src="../imagens/user.svg" alt="" srcset="">
-            <input type="email" name="login" placeholder="Username">
+    <div class="containerMaster">
+        <div class="login">
+            <form method="GET">
+                <h1>Login</h1>
+                <div class="userLogin">
+                    <img src="../imagens/user.svg" alt="">
+                    <input type="email" name="" placeholder="Usuário">
+                </div>
+                <div class="passwordLogin">
+                    <img src="../imagens/padlock.svg" alt="">
+                    <input type="password" name="" placeholder="Senha">
+                </div>
+                <input type="button" name="" value="Login">
+            </form>
+            <a href="" class="esqueciSenha">Esqueci minha senha!</a>
+            <a class="login" href="">Login</a>
+            <a class="cadastrar" href="../HTML/cadastrar.html">Cadastrar</a>
         </div>
-        <div class="formPassword">
-            <img src="../imagens/padlock.svg" alt="" srcset="">
-            <input type="password" name="password" placeholder="Password">
-        </div>
-        <div class="container">
-            <input type="button" name="" value="Login">
-            <input type="button" value="Exit">
-        </div>
-        <div class="footer">
-            <a href="">esqueci minha senha</a>
-            <a href="">criar conta</a>
-        </div>
-    </form>
-    <!-- <form class="cadastro" method="POST">
-
-        <h1>Cadastrar</h1>
-        <input type="email" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <div class="container">
-            <input type="button" name="" value="Login">
-            <input type="button" value="Exit">
-        </div>
-    </form> -->
+        <div class="imagemSide"></div>
+    </div>
 </body>
 </html>

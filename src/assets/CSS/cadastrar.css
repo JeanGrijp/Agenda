@@ -49,8 +49,8 @@ div.containerMaster div.login form {
     align-items: center;
 }
 
-div.containerMaster div.login form div.userLogin {
-    top: 45%;
+div.containerMaster div.login form div.userName {
+    top: 35%;
     width: 55%;
     height: 6%;
     position: absolute;
@@ -61,8 +61,8 @@ div.containerMaster div.login form div.userLogin {
     align-items: center;
 }
 
-div.containerMaster div.login form div.passwordLogin {
-    top: 55%;
+div.containerMaster div.login form div.userEmail {
+    top: 44%;
     width: 55%;
     height: 6%;
     position: absolute;
@@ -71,6 +71,100 @@ div.containerMaster div.login form div.passwordLogin {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+div.containerMaster div.login form div.userTelephone {
+    top: 53%;
+    width: 55%;
+    height: 6%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.containerMaster div.login form div.userLogin {
+    top: 62%;
+    width: 55%;
+    height: 6%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 1000;
+}
+
+div.containerMaster div.login form div.passwordLogin {
+    top: 71%;
+    width: 55%;
+    height: 6%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.userName img {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    left: 0%;
+}
+
+div.userName input {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    border: none;
+    background: none;
+    font-weight: 1000;
+    color: black;
+    outline: none;
+}
+
+div.userTelephone img {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    left: 0%;
+}
+
+div.userTelephone input {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    border: none;
+    background: none;
+    font-weight: 1000;
+    color: black;
+    outline: none;
+}
+
+div.userEmail img {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    left: 0%;
+}
+
+div.userEmail input {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    border: none;
+    background: none;
+    font-weight: 1000;
+    color: black;
+    outline: none;
 }
 
 div.userLogin input {
@@ -102,6 +196,7 @@ div.passwordLogin input {
     font-weight: 1000;
     color: black;
     outline: none;
+    
 }
 
 div.passwordLogin img {
@@ -120,7 +215,7 @@ div.login form h1 {
 
 div.login form input[type=button] {
     position: absolute;
-    top: 70%;
+    top: 80%;
     background:  rgb(5, 41, 87);
     width: 20%;
     height: 5%;
@@ -132,7 +227,7 @@ div.login form input[type=button] {
 
 div.login form input[type=button]:hover {
     position: absolute;
-    top: 70%;
+    top: 80%;
     background: rgb(1, 19, 44);
     width: 20%;
     height: 5%;
@@ -140,19 +235,6 @@ div.login form input[type=button]:hover {
     border-radius: 10px;
     color: white;
     transition: 0.3s;
-}
-
-div.login a.esqueciSenha {
-    position: absolute;
-    width: 20%;
-    height: 3%;
-    /* border: 1px solid red; */
-    font-size: 60%;
-    color: black;
-    font-weight: 1000;
-    text-transform: uppercase;
-    top: 78%;
-    text-decoration: none;
 }
 
 div.login a.login {
@@ -170,8 +252,8 @@ div.login a.login {
     border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
     -webkit-border-radius: 0px 10px 10px 0px;
-    background: #fff;
-    color: black;
+    background: none;
+    color: white;
     border: none;
 }
 
@@ -190,7 +272,7 @@ div.login a.cadastrar {
     border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
     -webkit-border-radius: 0px 10px 10px 0px;
-    background: none;
-    color: white;
+    background: #fff;
+    color: black;
     border: none;
 }

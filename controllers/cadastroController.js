@@ -1,15 +1,8 @@
-const CadastroModel = require('../models/CadastroModel')
-
-// CadastroModel.create({
-//     nome: 'Jean Grijp',
-//     telefone: '081995033538',
-//     email: 'grijpjean@gmail.com',
-//     contatos: [{'Glenda': 995033538}],
-//     usuario: 'JeanGrijp',
-//     senha: '123'
-// }).then(dados=>console.log(dados)).catch(e=>console.log(e))
+const CadastroModel = require('../models/CadastroModel');
 
 exports.criarCadastro = (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
     CadastroModel.create({
         nome: req.body.nome,
         telefone: req.body.telefone,

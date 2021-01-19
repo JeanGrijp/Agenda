@@ -10,6 +10,7 @@ mongoose.connect(process.env.CHAVE1, {useNewUrlParser: true, useUnifiedTopology:
 }).catch(e => console.log(e))
 
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 app.use(routes)
 // app.set('views', path.resolve(__dirname, 'src', 'views', 'HTML'))
 // app.set('view engine', 'ejs')

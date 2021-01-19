@@ -1,5 +1,10 @@
 const CadastroModel = require('../models/CadastroModel');
 
+exports.inicial = (req, res) => {
+    res.render('../views/HTML/cadastro.html')
+}
+
+
 exports.criarCadastro = (req, res) => {
     console.log(req.body)
     res.send(req.body)

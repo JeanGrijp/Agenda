@@ -1,11 +1,11 @@
 const express = require('express')
 const route = express.Router()
-const loginController = require('./controllers/loginController')
-const cadastroController = require('./controllers/cadastroController')
+const loginController = require('./src/controllers/loginController')
+const cadastroController = require('./src/controllers/cadastroController')
 
-route.get('/cadastro', cadastroController.criarCadastro)
+route.get('/src/views/HTML/cadastro.html', cadastroController.inicial)
 route.post('/cadastro', cadastroController.criarCadastro)
-route.get('/', loginController.logar)
+route.get('/src/assets/HTML/login', loginController.logar)
 
 
 module.exports = route;

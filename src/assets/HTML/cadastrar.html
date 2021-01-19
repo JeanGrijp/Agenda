@@ -11,34 +11,35 @@
 <body>
     <div class="containerMaster">
         <div class="login">
-            <form action="/cadastrar" method="POST">
+            <form action="/cadastro" method="POST" autocomplete="on">
                 <h1>Cadastro</h1>
-                <div class="userTelephone">
-                    <img src="../imagens/telephone.svg" alt="">
-                    <input type="tel" name="" placeholder="Telefone">
+                <div class="userName">
+                    <img src="../imagens/name.svg" alt="">
+                    <input type="text" name="nome" placeholder="Nome">
                 </div>
                 <div class="userEmail">
                     <img src="../imagens/email.svg" alt="">
-                    <input type="email" name="" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                 </div>
-                <div class="userName">
-                    <img src="../imagens/name.svg" alt="">
-                    <input type="text" name="" placeholder="Nome">
+                <div class="userTelephone">
+                    <img src="../imagens/telephone.svg" alt="">
+                    <input type="tel" name="telefone" placeholder="Telefone">
                 </div>
                 <div class="userLogin">
                     <img src="../imagens/user.svg" alt="">
-                    <input type="text" name="" placeholder="Usuário">
+                    <input type="text" name="usuario" placeholder="Usuário">
                 </div>
                 <div class="passwordLogin">
                     <img src="../imagens/padlock.svg" alt="">
-                    <input type="password" name="" placeholder="Senha">
+                    <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <input type="button" name="" value="Cadastrar">
+                <input type="button" type="submit" name="" value="Cadastrar">
             </form>
             <a class="login" href="../HTML/login.html">Login</a>
             <a class="cadastrar" href="">Cadastrar</a>
         </div>
         <div class="imagemSide"></div>
     </div>
+<script src="../Scripts/main.js"></script>
 </body>
 </html>

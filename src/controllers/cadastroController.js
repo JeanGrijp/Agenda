@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const { patch } = require('../../routes');
 
 const CadastroModel = require('../models/CadastroModel');
 
@@ -18,5 +19,8 @@ exports.criarCadastro = (req, res) => {
         contatos: req.body.contatos,
         usuario: req.body.usuario,
         senha: req.body.senha
-    }).then(dados => console.log(dados))
+    }).then(dados => {
+        console.log(dados)
+        res.sendFile(path.join(__dirname, '../views/HTML/cadastro.html'))
+    })
 }

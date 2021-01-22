@@ -213,7 +213,7 @@ div.login form h1 {
     top: 25%;
 }
 
-div.login form input[type=button] {
+div.login form input[type=submit] {
     transition-delay: 1s;
     animation-delay: 1s;
     position: absolute;
@@ -227,7 +227,7 @@ div.login form input[type=button] {
     transition: 0.3s;
 }
 
-div.login form input[type=button]:hover {
+div.login form input[type=submit]:hover {
     position: absolute;
     top: 80%;
     background: rgb(1, 19, 44);

@@ -8,7 +8,6 @@ const cadastroController = require('./src/controllers/cadastroController')
 route.get('/', loginController.inicial)
 route.get('/cadastro', cadastroController.inicial)
 route.post('/cadastro', cadastroController.criarCadastro)
-route.get('/src/assets/HTML/login', loginController.logar)
 
 
 module.exports = route;

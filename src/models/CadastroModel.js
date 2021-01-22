@@ -3,7 +3,8 @@ const CadastroSchema = new mongoose.Schema({
     nome: {type: String, required:true},
     telefone: String,
     email: String,
-    contatos: [],
+    contatos: {},
+    tarefas: {},
     usuario: {type: String, required: true},
     senha: {type: String, required: true}
 })

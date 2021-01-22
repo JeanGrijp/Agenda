@@ -9,12 +9,14 @@ exports.inicial = (req, res) => {
 
 
 exports.criarCadastro = (req, res) => {
+    console.log("chegou")
     CadastroModel.create({
         nome: req.body.nome,
         telefone: req.body.telefone,
         email: req.body.email,
+        tarefas: req.body.tarefas,
         contatos: req.body.contatos,
         usuario: req.body.usuario,
         senha: req.body.senha
-    }).then(dados => console.log(dados).catch(e => console.log(e)))
+    }).then(dados => console.log(dados))
 }

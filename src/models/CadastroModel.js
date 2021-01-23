@@ -12,8 +12,6 @@ const CadastroSchema = new mongoose.Schema({
 
 const CadastroModel = mongoose.model('Cadastro', CadastroSchema)
 
-module.exports = CadastroModel
-
 class Cadastro  {
     constructor(body) {
         this.body = body;
@@ -63,3 +61,5 @@ class Cadastro  {
     
     }
 }
+
+module.exports = Cadastro

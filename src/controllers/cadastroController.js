@@ -9,18 +9,25 @@ exports.inicial = (req, res) => {
 }
 
 
-exports.criarCadastro = (req, res) => {
-    console.log("chegou")
-    CadastroModel.create({
-        nome: req.body.nome,
-        telefone: req.body.telefone,
-        email: req.body.email,
-        tarefas: req.body.tarefas,
-        contatos: req.body.contatos,
-        usuario: req.body.usuario,
-        senha: req.body.senha
-    }).then(dados => {
-        console.log(dados)
-        res.sendFile(path.join(__dirname, '../views/HTML/cadastro.html'))
-    })
-}
+exports.register = async function(req, res) {
+  try {
+    const login = new Login(req.body);
+    await login.register();
+
+    if(login.errors.length > 0) {
+      req.flash('errors', login.errors);
+      req.session.save(function() {
+        return res.redirect('back');
+      });
+      return;
+    }
+
+    req.flash('success', 'Seu usuário foi criado com sucesso.');
+    req.session.save(function() {
+      return res.redirect('back');
+    });
+  } catch(e) {
+    console.log(e);
+    return res.sendFile(path.join(__dirname, '../views/HTML/cadastro.html'));
+  }
+  };

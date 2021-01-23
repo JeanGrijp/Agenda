@@ -18,3 +18,4 @@ exports.registra = async function(req, res) {
     return res.sendFile(path.join(__dirname, '../views/HTML/cadastro.html'));
   }
 };
+

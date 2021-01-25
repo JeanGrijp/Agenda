@@ -49,6 +49,31 @@ div.containerMaster div.login form {
     align-items: center;
 }
 
+
+/* FLASH MESSAGES */
+form div.flashMessages {
+    position: absolute;
+    top: 35%;
+    width: 55%;
+    height: 9%;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    
+}
+
+form div.flashMessages p {
+    margin: auto auto;
+    text-align: center;
+    position: relative;
+    font-size: 60%;
+    font-weight: 800;
+    color: red;
+}
+
 div.containerMaster div.login form div.userLogin {
     top: 45%;
     width: 55%;

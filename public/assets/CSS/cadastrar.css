@@ -51,6 +51,12 @@ div.containerMaster div.login form {
 }
 
 
+div.containerMaster div.login form div img {
+    width: 20%;
+    height: 70%;
+    position: absolute;
+}
+
 /* FLASH MESSAGES */
 /* form div.flashMessages {
     position: absolute;

@@ -7,7 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../imagens/tela2.jpg');
+    background-color: var(--color-background-1);
+    background-image: url('../imagens/backg.png');
     background-size: cover;
     /* background: no-repeat; */
     /* background-color: #111111; */
@@ -20,18 +21,18 @@ div.containerMaster {
     border-radius: 10px;
     position: absolute;
     /* border: 1px solid red; */
-    width: 80%;
+    width: 30%;
     height: 80%;
-    background-image: url('../imagens/tela2.jpg');
+    /* background-image: url('../imagens/tela2.jpg'); */
     /* opacity: 0.9; */
 }
 
 div.containerMaster div.login {
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: absolute;
-    /* border: 1px solid rgb(30, 185, 30); */
-    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(30, 185, 30);  */
+    /* background-color: rgb(255, 255, 255); */
     
     border-radius: 10px;
     display: flex;
@@ -49,122 +50,52 @@ div.containerMaster div.login form {
     align-items: center;
 }
 
-div.containerMaster div.login form div.userName {
+
+/* FLASH MESSAGES */
+/* form div.flashMessages {
+    position: absolute;
     top: 35%;
     width: 55%;
-    height: 6%;
-    position: absolute;
-    border: 1px solid black;
+    height: 9%;
+    border: 1px solid red;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    
 }
 
-div.containerMaster div.login form div.userEmail {
-    top: 44%;
-    width: 55%;
-    height: 6%;
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-div.containerMaster div.login form div.userTelephone {
-    top: 53%;
-    width: 55%;
-    height: 6%;
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+form div.flashMessages p {
+    margin: auto auto;
+    text-align: center;
+    position: relative;
+    font-size: 60%;
+    font-weight: 800;
+    color: red;
+} */
 
 div.containerMaster div.login form div.userLogin {
-    top: 62%;
-    width: 55%;
+    top: 45%;
+    width: 60%;
     height: 6%;
     position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-bottom: 1px solid white;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-weight: 1000;
 }
 
 div.containerMaster div.login form div.passwordLogin {
-    top: 71%;
-    width: 55%;
+    top: 55%;
+    width: 60%;
     height: 6%;
     position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-bottom: 1px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-div.userName img {
-    width: 20%;
-    height: 80%;
-    position: absolute;
-    left: 0%;
-}
-
-div.userName input {
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    right: 0;
-    border: none;
-    background: none;
-    font-weight: 1000;
-    color: black;
-    outline: none;
-}
-
-div.userTelephone img {
-    width: 20%;
-    height: 80%;
-    position: absolute;
-    left: 0%;
-}
-
-div.userTelephone input {
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    right: 0;
-    border: none;
-    background: none;
-    font-weight: 1000;
-    color: black;
-    outline: none;
-}
-
-div.userEmail img {
-    width: 20%;
-    height: 80%;
-    position: absolute;
-    left: 0%;
-}
-
-div.userEmail input {
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    right: 0;
-    border: none;
-    background: none;
-    font-weight: 1000;
-    color: black;
-    outline: none;
 }
 
 div.userLogin input {
@@ -175,14 +106,16 @@ div.userLogin input {
     border: none;
     background: none;
     font-weight: 1000;
-    color: black;
+    color: white;
     outline: none;
+    /* border-bottom: 1px solid white; */
 }
 
 div.userLogin img {
     width: 20%;
-    height: 80%;
+    height: 70%;
     position: absolute;
+
     left: 0%;
 }
 
@@ -194,87 +127,112 @@ div.passwordLogin input {
     border: none;
     background: none;
     font-weight: 1000;
-    color: black;
+    color: white;
     outline: none;
-    
 }
 
 div.passwordLogin img {
     width: 20%;
-    height: 80%;
+    height: 70%;
     position: absolute;
     left: 0%;
-
 }
 
-div.login form h1 {
+div.login form img {
     text-align: center;
     position: absolute;
-    top: 25%;
+    top: 20%;
+    /* left: 20%; */
+    /* color: #fff; */
+    /* font-weight: 1000; */
+    /* font-size: 2.2rem;    */
+}
+
+div.login form img.imagem-login {
+    position: absolute;
+    width: 60%;
+    top: 8%;
 }
 
 div.login form input[type=submit] {
-    transition-delay: 1s;
-    animation-delay: 1s;
     position: absolute;
-    top: 80%;
-    background:  rgb(5, 41, 87);
-    width: 20%;
+    top: 70%;
+    right: 20%;
+    background: var(--color-text-sub);
+    width: 60%;
     height: 5%;
     border: none;
     border-radius: 10px;
     color: white;
+    font-weight: 1000;
     transition: 0.3s;
 }
 
-div.login form input[type=submit]:hover {
+/* div.login form input[type=submit]:hover {
     position: absolute;
-    top: 80%;
-    background: rgb(1, 19, 44);
-    width: 20%;
+    top: 70%;
+    right: 20%;
+    background:  var(--color-text-sub);
+    width: 60%;
     height: 5%;
     border: none;
     border-radius: 10px;
     color: white;
+    font-weight: 1000;
     transition: 0.3s;
+} */
+
+div.login a.esqueciSenha {
+    position: absolute;
+    width: 30%;
+    height: 3%;
+    /* border: 1px solid red; */
+    font-size: 60%;
+    color: white;
+    /* font-weight: 1000; */
+    text-transform: uppercase;
+    /* left: 25%; */
+    top: 75%;
+    text-decoration: none;
 }
 
 div.login a.login {
     /* border: 1px solid red; */
     position: absolute;
-    width: 15%;
+    width: 50%;
     height: 6%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
     font-weight: 800;
-    top: 45%;
-    right: -15%;
-    border-radius: 0px 10px 10px 0px;
-    -moz-border-radius: 0px 10px 10px 0px;
-    -webkit-border-radius: 0px 10px 10px 0px;
-    background: none;
+    top: 0%;
+    left: 0;
+    /* background: var(--color-background-2); */
     color: white;
     border: none;
 }
 
 div.login a.cadastrar {
-    /* border: 1px solid red; */
     position: absolute;
-    width: 15%;
+    width: 50%;
     height: 6%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
     font-weight: 800;
-    top: 49.9%;
-    right: -15%;
-    border-radius: 0px 10px 10px 0px;
+    top: 0%;
+    left: 50%;
+    /* right: -15%; */
+    /* border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
-    -webkit-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px; */
     background: #fff;
-    color: black;
+    background: none;
+    color: white;
     border: none;
+    border-bottom: 1px solid var(--color-text-sub);
+
 }
+

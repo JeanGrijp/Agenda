@@ -1,8 +1,9 @@
 :root {
     --color-text-title: #BCBAD2;
     --color-text-sub: #FD6412;
-    --color-background-1: #2B0082;
-    --color-background-2: #5400FF;
+    
+    --color-background-1:#020113;
+    --color-background-2: #2c2183;
 }
 
 * {

@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Jean\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Jean\AppData\Local\Programs\Python\Python38-32\;C:\Users\Jean\AppData\Local\Microsoft\WindowsApps;C:\Users\Jean\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jean\AppData\Roaming\npm;C:\Users\Jean\AppData\Local\Yarn\bin;C:\Users\Jean\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137008:13)
+      at Interface.emit (events.js:315:20)
+      at Interface._ttyWrite (readline.js:866:16)
+      at ReadStream.onkeypress (readline.js:205:10)
+      at ReadStream.emit (events.js:315:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1133:36)
+      at ReadStream.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+
+npm manifest: 
+  {
+    "name": "agenda",
+    "version": "1.0.0",
+    "description": "Primeiro projeto pessoal para aprimoramento do conteudo estudado no ano de 2020, projeto esse baseado em um desafio lançado a mim, por Kevin Beltrão.",
+    "main": "./src/assets/Scripts/main.js",
+    "scripts": {
+      "starter": "nodemon ./src/assets/Scripts/main.js",
+      "executar": "webpack -w"
+    },
+    "keywords": [],
+    "author": "Jean Grijp",
+    "license": "ISC",
+    "dependencies": {
+      "babel-eslint": "^10.1.0",
+      "body-parser": "^1.19.0",
+      "connect-flash": "^0.1.1",
+      "connect-mongo": "^3.2.0",
+      "cors": "^2.8.5",
+      "csurf": "^1.11.0",
+      "dotenv": "^8.2.0",
+      "ejs": "^3.1.5",
+      "express": "^4.17.1",
+      "express-session": "^1.17.1",
+      "helmet": "^4.4.1",
+      "html": "^1.0.0",
+      "mongoose": "^5.11.12",
+      "nodemon": "^2.0.7",
+      "validator": "^13.5.2"
+    },
+    "devDependencies": {
+      "eslint": "^7.18.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.22.0",
+      "eslint-plugin-react-hooks": "^4.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

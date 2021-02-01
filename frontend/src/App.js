@@ -17,7 +17,6 @@ function App() {
         <div className="google">
           <img src={google} alt="" srcset=""/>
           <input type="button" value="Or Login with Google"/>
-
         </div>
       </form>
     </div>

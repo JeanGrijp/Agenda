@@ -8,6 +8,7 @@ const TarefaController = require('./controllers/tarefaController');
 route.put('/tarefas', TarefaController.update);
 route.get('/tarefas', TarefaController.index);
 route.post('/tarefas', TarefaController.store);
+route.post('/sessions/login', SessionController.login);
 route.post('/sessions', SessionController.store);
 
 module.exports = route;

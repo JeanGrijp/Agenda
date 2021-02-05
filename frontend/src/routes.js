@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, link} from 'react-router-dom';
 
 import login from './pages/login';
 import dashboard from './pages/dashboard';
@@ -9,7 +9,7 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={login}/>
-        <Route path="/dashboard" component={dashboard}/>
+        <Route path="/dashboard" exact component={dashboard}/>
       </Switch>
     </BrowserRouter>
   )

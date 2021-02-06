@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import api from '../../services/api';
+import './login.css'
 
 
 import google from "../../imagens/google.svg";
 
-export default function Login({history}) {
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -14,7 +15,6 @@ export default function Login({history}) {
     const status = resposta.data.status
     if (status) {
       localStorage.setItem('usuario', resposta.data.id)
-      history.push('/dashboard')
     }
   }
   return (

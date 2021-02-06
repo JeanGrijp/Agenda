@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./imagens/7285.jpg');
+  background: url('../../imagens/7285.jpg');
   background-size: cover;
 }
 

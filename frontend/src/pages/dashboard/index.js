@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
+import api from '../../services/api';
 import './dashboard.css'
 
 export default function Dashboard() {
   return (
-    <div className="container"></div>
+    <div className="containerDashboard"></div>
   )
 };

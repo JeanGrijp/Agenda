@@ -4,6 +4,8 @@ import './dashboard.css'
 
 export default function Dashboard() {
   return (
-    <div className="containerDashboard"></div>
+    <div className="containerDashboard">
+      <div></div>
+    </div>
   )
 };

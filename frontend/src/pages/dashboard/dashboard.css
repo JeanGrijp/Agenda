@@ -22,24 +22,103 @@ html, body, #root {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../../imagens/7285.jpg');
+  /* background: url('../../imagens/7285.jpg'); */
   background-size: cover;
 }
 
 @media (max-width: 700px) {
+  img.topo {
+    position: absolute;
+    top: 0;
+  }
+
+
+  /* Side Bar */
+
   nav.navSideBar {
     position: absolute;
     left: 0;
     width: 10%;
     height: 100%;
-    background-color: #050a2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #050a2b; */
   }
 
+  nav.navSideBar a {
+    text-decoration: none;
+    color: #BCBAD2;
+    font-size: 0;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50% 0; */
+    background: rgb(255, 255, 255);
+  }
+
+  nav.navSideBar a.task1 {
+    background: #020311;
+  }
+
+  nav.navSideBar a img {
+    width: 70%;
+    height: 70%;
+  }
+
+
+  nav.navSideBar div {
+    background: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  nav.navSideBar div.um {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 15%;
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  nav.navSideBar div.dois {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 5%;
+    border-radius: 0px 25px 0px 0px;
+  }
+
+  nav.navSideBar div.tres {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 5%;
+  }
+
+  nav.navSideBar div.quatro {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 15%;
+    border-radius: 0px 0px 25px 0px;
+  }
+
+  div.containerDashboardTask{
+    width: 80%;
+    height: 80%;
+    border: 1px solid red;
+  }
+
+  
+  
 }
+
 

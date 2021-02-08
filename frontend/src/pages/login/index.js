@@ -18,8 +18,8 @@ export default function Login() {
     }
   }
   return (
-
-    <form onSubmit={handleSubmit}>
+    <div className="container">
+      <form onSubmit={handleSubmit}>
         <h1>Sign In</h1>
         <input type="email" value={email} name="" placeholder="Login" onChange={event => setEmail(event.target.value)} id=""/>
         <input type="password" value={password} name="" placeholder="Senha" onChange={event => setPassword(event.target.value)} id=""/>
@@ -31,5 +31,6 @@ export default function Login() {
           <input type="button" value="Or Login with Google"/>
         </div>
       </form>
+    </div>
   )
 };

@@ -4,8 +4,11 @@ import './dashboard.css'
 
 export default function Dashboard() {
   return (
+    <>
+    <nav className="navSideBar"></nav>
     <div className="containerDashboard">
       <div></div>
     </div>
+    </>
   )
 };

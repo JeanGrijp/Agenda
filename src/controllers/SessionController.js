@@ -4,7 +4,6 @@ module.exports = {
 
   async login(req, res) {
     const { email, password } = req.body;
-
     const valida = await User.findOne({ email });
     if (valida) {
       if (valida.password === password) {
